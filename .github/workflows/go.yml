@@ -24,6 +24,10 @@ jobs:
     - name: Build
       run: go build -v ./...
 
+    - name: pwd
+      run: pwd
+    - name: ls
+      run: ls -laR
     - name: Upload Go test results
       uses: actions/upload-artifact@v4
       with:
